@@ -3,6 +3,20 @@ package com.upchiapas.HerenciaFigura.models;
 public class Triangulo extends Figura{
     private byte base, altura;
 
+    public Triangulo(){
+        this((byte) 0, (byte) 0, "2.0");
+    }
+
+    public Triangulo(byte base, byte altura){
+        this(base,altura,"2.0");
+    }
+
+    public Triangulo(byte base, byte altura, String version){
+        super(version);
+        this.base=base;
+        this.altura=altura;
+    }
+
     public byte getBase() {
         return base;
     }

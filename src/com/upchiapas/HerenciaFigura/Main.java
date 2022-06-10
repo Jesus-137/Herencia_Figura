@@ -11,10 +11,12 @@ public class Main {
         byte r;
         byte a, b;
         Scanner entrada=new Scanner(System.in);
-        Circulo circulo=new Circulo();
+        Circulo circulo=new Circulo("1.0");
         System.out.println("Ingrese el radio del circulo");
         r=entrada.nextByte();
         circulo.setRadio(r);
+        System.out.println("El area del circulo es: "+circulo.calcularArea());
+        Circulo circulo2=new Circulo("1.0");
         Triangulo triangulo=new Triangulo();
         System.out.println("Ingrese la altura del triangulo");
         a=entrada.nextByte();
@@ -29,7 +31,6 @@ public class Main {
         System.out.println("Ingrese la area del rectanculo");
         a=entrada.nextByte();
         ractanculo.setAltura(a);
-        System.out.println("El area del circulo es: "+circulo.calcularArea());
         System.out.println("El area del triangulo es: "+triangulo.calcularArea());
         System.out.println("El area del rectanculo es: "+ractanculo.calcularArea());
     }
